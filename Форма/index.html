@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <form>
+  <div class="form">
+  <h1>CREATE AN ACCOUNT</h1>
+  <p>We always keep your name and email address private.</p>
+<div class="formInfo">
+  <input placeholder="First name" type="text" name="first name" pattern="^[a-zA-Zа-яА-я]{1,32}" required>
+  <input placeholder="Last name" type="text" name="last name" pattern="^[a-zA-Zа-яА-я]{1,32}" required>
+  <input placeholder="Display name" type="text" name="display name"  pattern="^[a-z0-9_-]{3,15}$" required>
+  <input placeholder="Email Address" type="text" name="email address" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+" required>
+  <input placeholder="Password" type="password" name="password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*_-]).{8,}$" required>
+  <input placeholder="Password Confirmation" type="password" name="password confirmation"  pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*_-]).{8,}$" required>
+</div>
+<label>
+  <div class="radio">
+    <div class="radioInfo">
+      <input type="radio" name="seller">
+      <h2>Join As a Buyer</h2>
+    </div>
+    <p>I am looking for a Name, Logo or Tagline for my business, brand or product.</p>
+  </div>
+  <div class="radio">
+    <div class="radioInfo">
+      <input type="radio" name="seller">
+      <h2>Join As a Creative or Marketplace Seller</h2>
+    </div>
+    <p>I plan to submit name ideas, Logo designs or sell names in Domain Marketplace.</p> 
+  </div>    
+</label>
+<label>
+  <input class="box" type="checkbox" name="allow">
+  <span>Allow Squadhelp to send marketing/promotional offers from time to time</span>
+</label>
+  <input type="submit" value="Create account" class="submitAccounr">
+    <span>By clicking this button, you agree to our <a href="#">Terms of Service.</a></span>
+  <input type="submit" value="Sign up with Google" class="submitGoogle">
+</div>
+</form>
+</body>
+</html>
